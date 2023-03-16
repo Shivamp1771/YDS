@@ -1,0 +1,13 @@
+POST http://localhost:4000/app/signup
+Content-Type: application/json
+
+{
+    "firstName":"Shivam",
+    "middleName": "Santoshbhai",
+    "lastName": "Parekh",
+    "address":"570, linden drive",
+    "city":"Cambridge",
+    "phone": 3653246481,
+    "email":"Parekh@mail.com",
+    "birthDate":"05-05-2000"
+}

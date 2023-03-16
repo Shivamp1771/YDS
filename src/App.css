@@ -1,0 +1,77 @@
+html{
+width: 100%;
+background-color: #a9c6ff;
+}
+.App{
+  width: 100%;
+}
+.App-header {
+
+        background-color: #f9f5e1;
+        display: flex;
+        padding: 1%;
+        color: #842029;
+        /* font-weight: bolder; */
+        font-family: fantasy;
+        /* letter-spacing: 4px; */
+        word-spacing: 10px;
+
+  }
+  .App-logo{
+    height: auto;
+    width: 20%;
+    
+  }
+  .fixing{
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  
+  .nave{
+    display: flex;
+    padding: 1%;
+    color: #842029;
+    /* font-weight: bolder; */
+    font-family: fantasy;
+    /* letter-spacing: 4px; */
+    word-spacing: 10px; 
+ }
+  .title{
+    height: auto;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-block: auto;
+    outline: none;
+    
+  }
+  .heading1{
+    background-color: #842029;
+    color: white;
+    padding: 10px;
+  }
+  
+  @media only screen and (max-width:1000px) {
+    /* For tablets: */
+    .title {
+    margin-block: auto;
+    font-size:1.5rem;
+    }
+    .heading1 {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .main {
+      margin-top: 60px;
+    }
+    
+  }
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .title {
+    margin-block: auto;
+    font-size:1rem;
+    }
+    
+  }

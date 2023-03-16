@@ -1,0 +1,61 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  padding: 10%;
+  width: 300px;
+  height: 100px;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.logo-shrink {
+  width: 160px;
+  height: 70px;
+}
+
+.brand-name {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: font-size 0.2s ease;
+  color:#842029;
+  
+ 
+}
+
+.brand-name-shrink {
+  font-size: 1rem;
+}
+@media only screen and (max-width:1000px) {
+  /* For tablets: */
+  .logo-shrink {
+    width: 160px;
+    height: 65px;
+  }
+  .brand-name-shrink {
+    font-size: 1rem;
+  }
+  .ml-auto{
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .logo-shrink {
+    width: 160px;
+    height: 65px;
+  }
+  .brand-name-shrink {
+    font-size: 1rem;
+  }
+  .navbar
+  {
+    height: fit-content;
+  }
+  
+}
