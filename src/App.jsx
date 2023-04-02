@@ -256,17 +256,18 @@ class App extends Component {
                                     className='form-control' /><br></br>
 
                               
-                                <input placeholderText='BirthDate' type="date"
+                                <input placeholder='BirthDate' type="date"
                                     onChange={this.changebirthDate}
                                     value={this.state.birthDate}
                                     className='form-control form-group' /><br></br>
 
 
                                 <h3 className='heading1'>Status In Canada</h3><br></br>
-                                <select class="form-select" aria-label="Default select example" 
+                                <select className="form-select" aria-label="Default select example" 
                                 onChange={this.changeimmigrationStatus} 
                                 value={this.state.immigrationStatus}>
-                                    <option selected>Immigration Status</option>
+                                    <option defaultValue="Immigration Status" >Immigration Status</option>
+                                    <option value="Immigration Status" >Immigration Status</option>
                                     <option value="Student">Student</option>
                                     <option value="Work Permit">Work Permit</option>
                                     <option value="PR">PR</option>
