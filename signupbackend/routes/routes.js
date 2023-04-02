@@ -12,6 +12,17 @@ router.post('/signup', (request, response) =>{
         phone:request.body.phone,
         email:request.body.email,
         birthDate:request.body.birthDate,
+        immigrationStatus: request.body.immigrationStatus,
+        collegeName: request.body.collegeName,
+        program: request.body.program, 
+        campus: request.body.campus,
+        intake: request.body.intake,
+        indiaName: request.body.indiaName,
+        indiaAddress: request.body.indiaAddress,
+        indiaCity: request.body.indiaCity,
+        indiaPhone: request.body.indiaPhone,
+        refName: request.body.refName,
+        refPhone: request.body.refPhone
     })
     signedUpUser.save()
     .then(data =>{

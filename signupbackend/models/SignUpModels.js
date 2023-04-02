@@ -32,6 +32,51 @@ const signUpTemplate = new mongoose.Schema({
     birthDate:{
         type:Date,
         default:Date.now
+    },
+    immigrationStatus:{
+        type:String,
+        enum: ['Student','Work Permit','PR'],
+        required: true
+    },
+    collegeName: {
+        type:String,
+        required:true
+    },
+    program:{
+        type:String,
+        required:true
+    },
+    campus:{
+        type:String,
+        required:true
+    },
+    intake:{
+        type:String,
+        required:true
+    },
+    indiaName:{
+        type:String,
+        required:true
+    },
+    indiaAddress:{
+        type:String,
+        required:true
+    },
+    indiaCity:{
+        type:String,
+        required:true
+    },
+    indiaPhone:{
+        type:Number,
+        required:true
+    },
+    refName:{
+        type:String,
+        required:true
+    },
+    refPhone:{
+        type:Number,
+        required:true
     }
 })
 

@@ -19,6 +19,17 @@ class App extends Component {
             phone: '',
             email: '',
             birthDate: '',
+            immigrationStatus: '',
+            collegeName: '',
+            program: '',
+            campus: '',
+            intake: '',
+            indiaName: '',
+            indiaAddress: '',
+            indiaCity: '',
+            indiaPhone: '',
+            refName: '',
+            refPhone: '',
         }
         this.changefirstName = this.changefirstName.bind(this)
         this.changelastName = this.changelastName.bind(this)
@@ -28,6 +39,17 @@ class App extends Component {
         this.changephone = this.changephone.bind(this)
         this.changeemail = this.changeemail.bind(this)
         this.changebirthDate = this.changebirthDate.bind(this)
+        this.changeimmigrationStatus = this.changeimmigrationStatus.bind(this)
+        this.changecollegeName = this.changecollegeName.bind(this)
+        this.changeprogram = this.changeprogram.bind(this)
+        this.changecampus = this.changecampus.bind(this)
+        this.changeintake = this.changeintake.bind(this)
+        this.changeindiaName = this.changeindiaName.bind(this)
+        this.changeindiaAddress = this.changeindiaAddress.bind(this)
+        this.changeindiaCity = this.changeindiaCity.bind(this)
+        this.changeindiaPhone = this.changeindiaPhone.bind(this)
+        this.changerefName = this.changerefName.bind(this)
+        this.changerefPhone = this.changerefPhone.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
         // this.onSubmit = this.onChange.status(this.status)
     }
@@ -72,6 +94,61 @@ class App extends Component {
             birthDate: event.target.value
         })
     }
+    changeimmigrationStatus(event) {
+        this.setState({
+            immigrationStatus: event.target.value
+        })
+    }
+    changecollegeName(event) {
+        this.setState({
+            collegeName: event.target.value
+        })
+    }
+    changeprogram(event) {
+        this.setState({
+            program: event.target.value
+        })
+    }
+    changecampus(event) {
+        this.setState({
+            campus: event.target.value
+        })
+    }
+    changeintake(event) {
+        this.setState({
+            intake: event.target.value
+        })
+    }
+    changeindiaName(event) {
+        this.setState({
+            indiaName: event.target.value
+        })
+    }
+    changeindiaAddress(event) {
+        this.setState({
+            indiaAddress: event.target.value
+        })
+    }
+    changeindiaCity(event) {
+        this.setState({
+            indiaCity: event.target.value
+        })
+    }
+    changeindiaPhone(event) {
+        this.setState({
+            indiaPhone: event.target.value
+        })
+    }
+    changerefName(event) {
+        this.setState({
+            refName: event.target.value
+        })
+    }
+    changerefPhone(event) {
+        this.setState({
+            refPhone: event.target.value
+        })
+    }
     changestatus(event) {
         this.setState({
             staus: event.target.value
@@ -90,6 +167,17 @@ class App extends Component {
             phone: this.state.phone,
             email: this.state.email,
             birthDate: this.state.birthDate,
+            immigrationStatus: this.state.immigrationStatus,
+            collegeName: this.state.collegeName,
+            program: this.state.program,
+            campus: this.state.campus,
+            intake: this.state.intake,
+            indiaName: this.state.indiaName,
+            indiaAddress: this.state.indiaAddress,
+            indiaCity: this.state.indiaCity,
+            indiaPhone: this.state.indiaPhone,
+            refName: this.state.refName,
+            refPhone: this.state.refPhone,
         }
 
         axios.post('http://localhost:4000/app/signup', registered)
@@ -103,7 +191,18 @@ class App extends Component {
             city: '',
             phone: '',
             email: '',
-            birthDate: ''
+            birthDate: '',
+            immigrationStatus: '',
+            collegeName: '',
+            program: '',
+            campus: '',
+            intake: '',
+            indiaName: '',
+            indiaAddress: '',
+            indiaCity: '',
+            indiaPhone: '',
+            refName: '',
+            refPhone: '',
         })
     }
     render() {
@@ -164,7 +263,9 @@ class App extends Component {
 
 
                                 <h3 className='heading1'>Status In Canada</h3><br></br>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" 
+                                onChange={this.changeimmigrationStatus} 
+                                value={this.state.immigrationStatus}>
                                     <option selected>Immigration Status</option>
                                     <option value="Student">Student</option>
                                     <option value="Work Permit">Work Permit</option>
@@ -174,22 +275,22 @@ class App extends Component {
                                 <h3 className='heading1'>Student Education Details</h3>
                                 
                                 <input type='text' placeholder='College Name'
-                                    onChange={this.qualification}
-                                    value={this.state.qualification}
+                                    onChange={this.changecollegeName}
+                                    value={this.state.collegeName}
                                     className='form-control' /><br></br>
 
                                 <input type='text' placeholder='Program'
-                                    onChange={this.program}
+                                    onChange={this.changeprogram}
                                     value={this.state.program}
                                     className='form-control' /><br></br>
 
                                 <input type='text' placeholder='Campus'
-                                    onChange={this.campus}
+                                    onChange={this.changecampus}
                                     value={this.state.campus}
                                     className='form-control' /><br></br>
 
                                 <input type='text' placeholder='Intake'
-                                    onChange={this.intake}
+                                    onChange={this.changeintake}
                                     value={this.state.intake}
                                     className='form-control' /><br></br>
 
@@ -197,34 +298,34 @@ class App extends Component {
                                 <h3 className='heading1'>India's Contact Details</h3>
                                 
                                 <input type='text' placeholder='Name'
-                                    onChange={this.Name}
-                                    value={this.state.Name}
+                                    onChange={this.changeindiaName}
+                                    value={this.state.indiaName}
                                     className='form-control' /><br></br>
 
                                 <input type='text' placeholder='Address'
-                                    onChange={this.Address}
-                                    value={this.state.Address}
+                                    onChange={this.changeindiaAddress}
+                                    value={this.state.indiaAddress}
                                     className='form-control' /><br></br>
 
                                 <input type='text' placeholder='City'
-                                    onChange={this.city}
-                                    value={this.state.city}
+                                    onChange={this.changeindiaCity}
+                                    value={this.state.indiaCity}
                                     className='form-control' /><br></br>
                                     
                                 <input type='text' placeholder='Phone'
-                                    onChange={this.Phone}
-                                    value={this.state.Phone}
+                                    onChange={this.changeindiaPhone}
+                                    value={this.state.indiaPhone}
                                     className='form-control' /><br></br>
 
                                 <h3 className='heading1'>Reference Details</h3>
 
                                 <input type='text' placeholder='Name'
-                                    onChange={this.Name}
-                                    value={this.state.Name}
+                                    onChange={this.changerefName}
+                                    value={this.state.refName}
                                     className='form-control' /><br></br>
                                 <input type='text' placeholder='Phone'
-                                    onChange={this.Phone}
-                                    value={this.state.Phone}
+                                    onChange={this.changerefPhone}
+                                    value={this.state.refPhone}
                                     className='form-control' /><br></br>
 
                                 <input type='submit'

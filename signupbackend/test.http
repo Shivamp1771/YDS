@@ -9,5 +9,16 @@ Content-Type: application/json
     "city":"Cambridge",
     "phone": 3653246481,
     "email":"Parekh@mail.com",
-    "birthDate":"05-05-2000"
+    "birthDate":"05-05-2000",
+    "immigrationStatus":"WorkPermit",
+    "collegeName": "Conestoga",
+    "program": "IT",
+    "campus": "Doon",
+    "intake": "2021",
+    "indiaName": "Santoshbhai",
+    "indiaAddress": "Society",
+    "indiaCity": "Surat",
+    "indiaPhone": 123456789,
+    "refName": "shiva",
+    "refPhone": 123456789,
 }
