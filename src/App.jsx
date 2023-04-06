@@ -180,10 +180,11 @@ class App extends Component {
             refPhone: this.state.refPhone,
         }
 
-        axios.post('https://ydsyouthkitchener.netlify.app/app/signup', registered)
-        .then(response => console.log(response.data))
-        .catch(error => console.error(error));
-
+        axios.post('https://ydsyouthkitchener.netlify.app/app/signup', registered ,{
+            withCredentials: true
+            .catch(error => console.error(error))
+            .then(response => console.log(response.data))
+        })
 
         this.setState({
             firstName: '',
