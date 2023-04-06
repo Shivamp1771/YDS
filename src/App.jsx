@@ -180,8 +180,10 @@ class App extends Component {
             refPhone: this.state.refPhone,
         }
 
-        axios.post('http://localhost:4000/app/signup', registered)
-            .then(response => console.log(response.data))
+        axios.post('https://ydsyouthkitchener.netlify.app/app/signup', registered)
+        .then(response => console.log(response.data))
+        .catch(error => console.error(error));
+
 
         this.setState({
             firstName: '',
