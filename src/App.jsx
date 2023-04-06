@@ -181,10 +181,10 @@ class App extends Component {
         }
 
         axios.post('https://ydsyouthkitchener.netlify.app/app/signup', registered ,{
-            withCredentials: true
-            .catch(error => console.error(error))
-            .then(response => console.log(response.data))
-        })
+  withCredentials: true
+})
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
 
         this.setState({
             firstName: '',
