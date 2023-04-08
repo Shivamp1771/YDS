@@ -1,4 +1,4 @@
-POST https://ydsyouthkitchener.netlify.app/app/signup
+POST https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app/app/signup
 Content-Type: application/json
 
 {
