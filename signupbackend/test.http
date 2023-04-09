@@ -1,4 +1,4 @@
-POST https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app/app/signup
+POST https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app/api/users HTTP/1.1
 Content-Type: application/json
 
 {

@@ -181,10 +181,10 @@ class App extends Component {
         }
 
         axios.post('https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app/app/signup', registered ,{
-        withCredentials: true
-        })
-        .then(response => console.log(response.data))
-        .catch(error => console.error(error));
+            withCredentials: true
+          })
+            .then(response => console.log(response.data))
+            .catch(error => console.error(error));
 
         this.setState({
             firstName: '',
