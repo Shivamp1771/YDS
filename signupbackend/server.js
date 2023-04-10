@@ -13,7 +13,7 @@ app.use(express.json())
 
 // Add CORS headers using the cors middleware
 app.use(cors({
-  origin: 'https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app',
+  origin: 'https://yds-eight.vercel.app',
   credentials: true
 }))
 
