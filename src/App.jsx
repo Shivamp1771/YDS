@@ -180,11 +180,12 @@ class App extends Component {
             refPhone: this.state.refPhone,
         }
 
-        axios.post('https://kitchener-youths-8iwoqyqv8-shivamp1771.vercel.app/app/signup', registered ,{
-            withCredentials: true
-          })
-            .then(response => console.log(response.data))
-            .catch(error => console.error(error));
+        axios.post('https://yds-eight.vercel.app/app/signup', registered, {
+  withCredentials: true
+})
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
+
 
         this.setState({
             firstName: '',
