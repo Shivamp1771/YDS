@@ -27,11 +27,9 @@ router.post('/signup', (request, response) =>{
     signedUpUser.save()
     .then(data =>{
         response.json(data)
-        // code changes
     })
     .catch(error =>{
         response.json(error)
-        // response.json(found)
     })
 })
 
