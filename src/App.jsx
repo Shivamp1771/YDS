@@ -180,7 +180,7 @@ class App extends Component {
             refPhone: this.state.refPhone,
         }
 
-        axios.get('https://yds-eight.vercel.app/app/signup', registered, {
+        axios.post('https://yds-eight.vercel.app/app/signup', registered, {
         withCredentials: true
         })
         .then(response => console.log(response.data))
