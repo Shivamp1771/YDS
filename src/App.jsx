@@ -179,12 +179,21 @@ class App extends Component {
             refName: this.state.refName,
             refPhone: this.state.refPhone,
         }
+        const url = 'https://yds-eight.vercel.app/app/signup'
 
-        axios.post('https://yds-eight.vercel.app/app/signup', registered, {
-            withCredentials: true
-            })
-            .then(response => console.log(response.data))
-            .catch(error => console.error(error));
+        const options = {
+            method: 'POST',
+            headers: {'content-type': 'application/x-www-form-urlencoded'},
+            data: registered,
+            url
+        }
+        axios(options)
+        .then(response => console.log(response.data))
+        .catch(error => console.error(error));
+
+        // axios.post('https://yds-eight.vercel.app/app/signup', registered, {
+        //     withCredentials: true
+        //     })
 
         this.setState({
             firstName: '',
